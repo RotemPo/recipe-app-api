@@ -1,5 +1,5 @@
 FROM python:3.9-alpine3.13
-LABEL maintainer="Rotem_Portugez"
+LABEL maintainer="Rotem Portugez"
 
 ENV PYTHONUNBUFFERED=1
 
