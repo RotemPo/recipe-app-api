@@ -10,10 +10,10 @@ from django.core.management.base import BaseCommand
 
 
 class Command(BaseCommand):
-    
+
     def handle(self, *args, **kwargs):
         """Entrypoint for command."""
-        print('Waiting for database...')
+        self.stdout.write('Waiting for database...')
         db_up = False
         while db_up is False:
             try:
@@ -23,4 +23,4 @@ class Command(BaseCommand):
                 self.stdout.write('Database unavailable, waiting 1 second...')
                 time.sleep(1)
 
-        print(self.style.SUCCESS('Database available!'))
+        self.stdout.write(self.style.SUCCESS('Database available!'))
