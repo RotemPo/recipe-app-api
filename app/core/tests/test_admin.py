@@ -1,10 +1,10 @@
 """
 Tests for the Django admin modifications.
 """
-from django.test import TestCase
-from django.contrib.auth import get_user_model
-from django.urls import reverse
-from django.test import Client
+from django.test import TestCase # type: ignore
+from django.contrib.auth import get_user_model # type: ignore
+from django.urls import reverse # type: ignore
+from django.test import Client # type: ignore
 
 
 class AdminSiteTests(TestCase):
