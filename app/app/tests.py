@@ -2,7 +2,7 @@
 Sample test
 """
 
-from django.test import SimpleTestCase
+from django.test import SimpleTestCase  # type: ignore
 from app import calc
 
 

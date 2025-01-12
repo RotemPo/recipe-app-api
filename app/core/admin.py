@@ -3,9 +3,9 @@ from django.contrib import admin  # type: ignore # noqa
 Django admin customization.
 """
 
-from django.contrib import admin # type: ignore # noqa
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin # type: ignore
-from django.utils.translation import gettext_lazy as _ # type: ignore
+from django.contrib import admin  # type: ignore # noqa
+from django.contrib.auth.admin import UserAdmin as BaseUserAdmin  # type: ignore
+from django.utils.translation import gettext_lazy as _  # type: ignore
 
 from core import models
 

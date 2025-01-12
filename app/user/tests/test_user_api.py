@@ -1,12 +1,12 @@
 """
 Tests for the user API.
 """
-from django.test import TestCase # type: ignore
-from django.contrib.auth import get_user_model # type: ignore
-from django.urls import reverse # type: ignore
+from django.test import TestCase  # type: ignore
+from django.contrib.auth import get_user_model  # type: ignore
+from django.urls import reverse  # type: ignore
 
-from rest_framework.test import APIClient # type: ignore
-from rest_framework import status # type: ignore
+from rest_framework.test import APIClient  # type: ignore
+from rest_framework import status  # type: ignore
 
 
 CREATE_USER_URL = reverse('user:create')
