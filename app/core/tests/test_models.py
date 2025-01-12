@@ -1,8 +1,8 @@
 """
 Tests for models.
 """
-from django.test import TestCase
-from django.contrib.auth import get_user_model
+from django.test import TestCase # type: ignore
+from django.contrib.auth import get_user_model # type: ignore
 
 
 class ModelTests(TestCase):
