@@ -4,13 +4,14 @@ Django admin customization.
 """
 
 from django.contrib import admin  # type: ignore # noqa
-from django.contrib.auth.admin import UserAdmin as BaseUserAdmin  # type: ignore
+from django.contrib.auth.admin import   # type: ignore \
+UserAdmin as BaseUserAdmin  # type: ignore
 from django.utils.translation import gettext_lazy as _  # type: ignore
 
 from core import models
 
 
-class UserAdmin(BaseUserAdmin):
+class UserAdmin(BaseUserAdmin):  # type: ignore
     """Define the admin pages for users."""
     ordering = ['id']
     list_display = ['email', 'name']

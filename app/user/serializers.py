@@ -1,13 +1,13 @@
 """
 Serializers for the user API View.
 """
-from django.contrib.auth import (
+from django.contrib.auth import (  # type: ignore
     get_user_model,
     authenticate,
 )
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext as _  # type: ignore
 
-from rest_framework import serializers
+from rest_framework import serializers  # type: ignore
 
 
 class UserSerializer(serializers.ModelSerializer):
